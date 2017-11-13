@@ -2,14 +2,16 @@
 
 ## 运行程序
 > $ go run ./web/cloudgo/main.go -p9090
+
 [negroni] listening on :9090
+
 [negroni] 2017-11-13T08:20:43+08:00 | 200 | 	 56.151µs | localhost:9090 | GET /hello/Feather
 
 ## 测试
 ### 测试命令
 > curl -v http://localhost:9090/hello/Feather
 ### 测试结果
-`*   Trying ::1...
+*   Trying ::1...
 * Connected to localhost (::1) port 9090 (#0)
 > GET /hello/Feather HTTP/1.1
 > Host: localhost:9090
@@ -24,16 +26,16 @@
 {
   "Test": "Hello Feather"
 }
-* Connection #0 to host localhost left intact`
+* Connection #0 to host localhost left intact
 
 
 ### 压力测试命令
 > ab -n 1000 -c 100 http://localhost:9090/hello/Feather
 
 ### 测试结果
-This is ApacheBench, Version 2.3 <$Revision: 1706008 $>
-Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
-Licensed to The Apache Software Foundation, http://www.apache.org/
+> This is ApacheBench, Version 2.3 <$Revision: 1706008 $>
+> Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+> Licensed to The Apache Software Foundation, http://www.apache.org/
 
 Benchmarking localhost (be patient)
 Completed 100 requests
