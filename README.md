@@ -2,11 +2,7 @@
 
 
 ## 运行程序
-> $ go run ./web/cloudgo/main.go -p9090
-
-[negroni] listening on :9090
-
-[negroni] 2017-11-13T08:20:43+08:00 | 200 | 	 56.151µs | localhost:9090 | GET /hello/Feather
+![](https://github.com/FlyingFeather/cloudgo/blob/master/picture/c-1.png)
 
 ## 使用框架
 gin
@@ -14,7 +10,7 @@ gin
 
 ## 测试
 ### 测试命令
-> curl -v http://localhost:9090/hello/Feather
+> curl -v http://localhost:9090/hello/testuser
 
 
 ### 测试结果
